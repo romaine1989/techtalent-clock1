@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+/********** CSS RESET **********/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("../pattern.png");
+  background-attachment: fixed; 
+}
+
+#main {
+  background: #ccc;
+  width: 80%;
+  height: 175px;
+  margin: 180px auto;
+  padding: 30px;
+  position: relative;/** so that left and right variables on badge div makes is relative to parent div of badge  **/
+}
+
+#badge {
+  background: #e66357;
+  width: 96px;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 48px);/* 50% from left of badge element minus half the width of the badge element so it's truly central */
+}
+
+#clock {
+  background: #ebebeb;
+  text-align: center;
+  height: 100%;
+  font-size: 55px;
+  padding-top: 20px;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 4px;
+}
